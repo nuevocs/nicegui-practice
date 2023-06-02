@@ -30,4 +30,4 @@ RUN poetry install --no-root
 
 EXPOSE 8080
 
-CMD python3 main.py
+CMD python3 date.py
