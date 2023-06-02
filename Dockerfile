@@ -4,7 +4,7 @@ ARG VERSION
 LABEL maintainer="Tat <tat@seriousexplosion.net>"
 
 WORKDIR /app
-COPY nicegui_nutrition_manager /app
+COPY nicegui_practice /app
 
 ENV POETRY_HOME="/opt/poetry" \
     POETRY_VIRTUALENVS_CREATE=false \
