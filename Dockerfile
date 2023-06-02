@@ -26,7 +26,7 @@ RUN curl -sSL https://install.python-poetry.org/ | python -
 # packages install
 COPY pyproject.toml /pyproject.toml
 RUN poetry install --no-root
-RUN poetry run playwright install && playwright install-deps
+# RUN poetry run playwright install && playwright install-deps
 
 EXPOSE 8080
 
