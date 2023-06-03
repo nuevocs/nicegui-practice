@@ -28,6 +28,7 @@ COPY pyproject.toml /pyproject.toml
 RUN poetry install --no-root
 # RUN poetry run playwright install && playwright install-deps
 
+ENV FILENAME="date.py"
 EXPOSE 8080
 
-CMD python3 date.py
+CMD python3 $FILENAME
